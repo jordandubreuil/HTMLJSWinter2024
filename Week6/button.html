@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" id="submit" value="Submit">
+    <p>Test</p>
+    <script>
+        var button = document.querySelector(`#submit`)
+        submit.addEventListener(`click`, alertHi)
+        function alertHi(e) {
+            alert("Hi");
+            p.innerHTML = "Hi";
+            submit.removeEventListener(`click`, alertHi)
+        }
+    </script>
+</body>
+
+</html>
