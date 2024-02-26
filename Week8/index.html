@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>click here</p>
+    <script>
+        /*var currentState = false
+
+        var p = document.querySelector(`p`)
+
+        p.addEventListener(`click`, function (e) {
+            if (currentState === false) {
+                console.log(`Hi`)
+                currentState = true
+            }
+            else {
+                console.log(`Bye`)
+                currentState = false
+            }
+        })
+
+        var currentState = 0
+
+        states = []
+        states[0] = function () {
+            console.log(`Hi`)
+            currentState = 1
+        }
+        states[1] = function () {
+            console.log(`Bye`)
+            currentState = 0
+        }
+
+        var p = document.querySelector(`p`)
+
+        p.addEventListener(`click`, function (e) {
+            states[currentState]();
+        })
+
+        var choices = [`Rock`, `Paper`, `Scissors`,`Spock`]
+        console.log(choices)
+        console.log(`You have: ${choices.length} choices:`)
+        var name = `jay`
+        name = name.toUpperCase()
+        console.log(name)
+        var subnet = `255.255.255.0`
+        var ip = `24.91.221.3`
+
+        var snmOctets = subnet.split(`.`)
+        var ipOctets = ip.split(`.`)
+
+        function getParts(_sub, _ip, _netOrClient) {
+            var network = ``
+
+            if (_sub[0] === _netOrClient) {
+                network += _ip[0] + `.`
+            }
+            if (_sub[1] === _netOrClient) {
+                network += _ip[1] + `.`
+            }
+            if (_sub[2] === _netOrClient) {
+                network += _ip[2] + `.`
+            }
+            if (_sub[3] === _netOrClient) {
+                network += _ip[3] + `.`
+            }
+
+            return network.substring(0, network.length - 1)
+        }
+
+        var network = getParts(snmOctets, ipOctets, `255`)
+        var host = getParts(snmOctets, ipOctets, `0`)
+
+        console.log(`Network: ${network}`)
+        console.log(`Host: ${host}`)
+
+        for (let i = 1; i < 8; i++) {
+            console.log(i)
+        }*/
+
+        var person = { first: `jay`, last: `Aguiar`, age: 40 }
+
+        for (let key in person) {
+            console.log(key)
+            //will output the Strings `first`, `last` and `age`
+
+            //console.log(typeof key)
+            //will output `string`
+
+            console.log(person[key])
+            //will output `jay`, `Aguiar`, 40
+        }
+    </script>
+</body>
+
+</html>
